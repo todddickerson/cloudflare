@@ -511,8 +511,6 @@ module CloudFlare
       })
     end
 
-    private
-
     def send_req(params)
       if @params[:email]
         params[:tkn] = @params[:api_key]
