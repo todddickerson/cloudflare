@@ -18,10 +18,6 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
-require 'cloudflare/connection'
-
 module CloudFlare
-  def self.connection(api_key, email = nil)
-    Connection.new(api_key, email)
-  end
+  VERSION = '2.1.0'
 end
